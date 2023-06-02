@@ -27,7 +27,7 @@ namespace PierresTreats.Controllers
     {
       string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
       ApplicationUser currentUser = await _userManager.FindByIdAsync(userId);
-      List<Flavor> userFlavor = _db.Flavors
+      List<Flavor> userFlavors = _db.Flavors
                           .Where(entry => entry.User.Id == currentUser.Id)
                           .ToList();
       return View(userFlavors);
