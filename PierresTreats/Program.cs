@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using ProjectName.Models;
+using PierresTreats.Models;
 
-namespace ProjectName
+namespace PierresTreats
 {
   class Program
   {
@@ -14,13 +14,17 @@ namespace ProjectName
 
       builder.Services.AddControllersWithViews();
 
-      builder.Services.AddDbContext<ProjectNameContext>(
+      builder.Services.AddDbContext<PierresTreatsContext>(
                         dbContextOptions => dbContextOptions
                           .UseMySql(
                             builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"]
                           )
                         )
                       );
+      
+      builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ToDoListContext>()
+                .AddDefaultTokenProviders(); 
 
       WebApplication app = builder.Build();
 
@@ -29,6 +33,9 @@ namespace ProjectName
       app.UseStaticFiles();
 
       app.UseRouting();
+
+      app.UseAuthentication(); 
+      app.UseAuthorization();
 
       app.MapControllerRoute(
           name: "default",
