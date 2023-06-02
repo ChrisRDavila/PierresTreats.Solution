@@ -27,11 +27,11 @@ namespace PierresTreats.Controllers
         ApplicationUser currentUser = await _userManager.FindByIdAsync(userId);
         if (currentUser != null)
         {
-          Treats[] treats = _db.Treats
+          Treat[] treats = _db.Treats
                       .Where(entry => entry.User.Id == currentUser.Id)
                       .ToArray();
           model.Add("treats", treats);
-          Flavors[] flavors = _db.Flavors
+          Flavor[] flavors = _db.Flavors
                       .Where(entry => entry.User.Id == currentUser.Id)
                       .ToArray();
           model.Add("flavors", flavors);
