@@ -4,7 +4,7 @@
 
 @using PierresTreats.Models;
 
-<h1>Welcome to Flavor Town</h1>
+<h1>Welcome to Pierre's Flavor Town</h1>
 
 <hr>
 
@@ -21,11 +21,22 @@
       <li>@Html.ActionLink(@treat.Description, "Details", "Treats", new { id = @treat.TreatId})</li>
     }
   </ul>
+  <h4>Flavors</h4>
+  @if (Model["flavors"].Length == 0)
+  {
+    <p>No flavors have been added yet!</p>
+  } 
+  <ul>
+    @foreach (Flavor flavor in Model["flavors"])
+    {
+      <li>@Html.ActionLink(@flavor.Type, "Details", "Flavors", new { id = @flavor.FlavorId})</li>
+    }
+  </ul>
 }
 else
 {
-  <h4>Treats</h4>
-  <p>Please @Html.ActionLink("log in", "LogIn", "Account") to view or manage your treats.</p>
+  <h4>Treats and Flavors</h4>
+  <p>Please @Html.ActionLink("log in", "LogIn", "Account") to view or manage your entries.</p>
 }
 
 <hr>
