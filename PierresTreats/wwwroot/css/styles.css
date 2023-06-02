@@ -7,8 +7,9 @@ div#footer {
 	background-color:aliceblue;
 	padding:8px;
 }
-\
-body {
+
+body 
+{
   background-image: url('./Treats.jpg');
   color: gold;
   background-size: cover;
