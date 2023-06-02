@@ -1,8 +1,8 @@
-# (Application Name) remove parens
+# Pierre's Sweet and Savory Treats
 
-#### (Brief Description of Application) remove parens
+#### This application will allow a business create a specifed user account and set up menu items (treats) and flavors to categorize these items and view lists of both
 
-#### By (Your Name Here) remove parans
+#### By Christopher Davila
 
 ## Technologies Used
 
