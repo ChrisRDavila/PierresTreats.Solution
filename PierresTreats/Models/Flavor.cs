@@ -1,7 +1,14 @@
-namespace PierresTreats.Models //update namespace here
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
+namespace PierresTreats.Models
 {
   public class Flavor
   {
-    // Business Logic goes here.
+    public int FlavorId { get; set; }
+    [Required(ErrorMessage = "The flavor's type can't be empty!")]
+    public string Type { get; set; }
+    public List<TreatFlavor> JoinEtities { get; }
+    public ApplicationUser User { get; set; }
   }
 }
