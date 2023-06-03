@@ -52,7 +52,8 @@
 
 ## Known Bugs
 
-* _too awesome, will cause user to get super psyched_
+* _no designation for admin user_
+* _could use more properties for actual functionality once focus is beyond mvp with user log in_
 
 ## License
 [MIT](https://github.com/ChrisRDavila/PierresTreats.Solution/blob/main/License.txt)
