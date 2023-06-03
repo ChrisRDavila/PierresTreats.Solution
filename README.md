@@ -52,7 +52,7 @@
 
 ## Known Bugs
 
-* __
+* _too awesome, will cause user to get super psyched_
 
 ## License
 [MIT](https://github.com/ChrisRDavila/PierresTreats.Solution/blob/main/License.txt)
