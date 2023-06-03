@@ -1,3 +1,19 @@
+.fade-in-left
+{
+	animation: fadeInLeft 2s;
+}
+@keyframes fadeInLeft
+{
+	0% { 
+		opacity: 0; 
+		transform: translateX(-20px);
+	}
+
+	100% { 
+		opacity: 1; 
+		transform: translate(0);
+	}
+}
 .box
 {
 	background-color:azure;
@@ -6,6 +22,7 @@
 	padding: 10px;
 	margin: 10px;
 	border-color: black;
+	opacity: 95%;
 }
 
 div#footer {
@@ -38,28 +55,13 @@ body
 	box-sizing: border-box;
 	float:left;
 }
-.fade-in-left
-{
-	animation: fadeInLeft 2s;
-}
-@keyframes fadeInLeft
-{
-	0% { 
-		opacity: 0; 
-		transform: translateX(-30px);
-	}
-
-	100% { 
-		opacity: 1; 
-		transform: translate(0);
-	}
-}
 
 input
 {
 	background-color:blanchedalmond;
-	color:lightsalmon;
+	color:darkmagenta;
 	border-radius: 10px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a
@@ -70,7 +72,7 @@ a
 }
 a:hover
 {
-	color: bisque;
+	color: darkgreen;
 }
 
 select
@@ -80,6 +82,13 @@ select
 }
 input.btn
 {
-	background-color:burlywood;
-	color: cornflowerblue;
+	background-color:lemonchiffon;
+	color:crimson;
+	opacity: 100%;
+	border: 10px;
+	border-color: black;
+}
+.login
+{
+	align-self: center;
 }

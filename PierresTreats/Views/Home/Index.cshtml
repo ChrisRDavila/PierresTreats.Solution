@@ -10,7 +10,9 @@
 
 @if (User.Identity.IsAuthenticated)
 {
-  <h4>Treats for @User.Identity.Name</h4>
+  <h4>Hello <span style="color:rgb(63, 94, 88)">@User.Identity.Name! </span></h4>
+  <h4>here are your  entries so far:</h4>
+  <h4><span style="color: brown">Treats:</span></h4>
   @if (Model["treats"].Length == 0)
   {
     <p>No treats have been added yet!</p>
@@ -21,7 +23,7 @@
       <li>@Html.ActionLink(@treat.Description, "Details", "Treats", new { id = @treat.TreatId})</li>
     }
   </ul>
-  <h4>Flavors</h4>
+  <h4><span style="color: brown">Flavors:</span></h4>
   @if (Model["flavors"].Length == 0)
   {
     <p>No flavors have been added yet!</p>
