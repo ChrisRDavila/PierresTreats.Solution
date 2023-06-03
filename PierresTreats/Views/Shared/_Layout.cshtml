@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
-    <div class="fade-in-down">
-      @RenderBody()
+    <div class="box"
+      <div class="fade-in-left">
+        @RenderBody()
+      </div>
     </div>
     @await Html.PartialAsync("Footer")
   </body>
