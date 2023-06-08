@@ -26,7 +26,7 @@
 
 * _1. Clone this to local directory using`\$ git clone https://github.com/ChrisRDavila/PierresTreats.Solution.git`._
 * _2. Open your terminal (e.g., Terminal or GitBash) and navigate to the correct directory using `\$ cd PierresTreats.solution` and use command `\$ code .` to open project in vs code_
-* _3. _Navigate into your factory development directory using `\$ cd PierresTreats` and Create appsettings.json file in this direcorty using `\$ touch appsettings.json` to store database name, user name and password for connecting to MySQL database using this structure:_
+* _3. _Navigate into the PierresTreats development directory using `\$ cd PierresTreats` and Create appsettings.json file in this direcorty using `\$ touch appsettings.json` to store database name, user name and password for connecting to MySQL database using this structure:_
 ```json
  "ConnectionStrings": 
 {
