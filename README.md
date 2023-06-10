@@ -35,7 +35,7 @@
 ```
 * _3. cont'd: where [YOUR-DB-NAME] is going to be the database you create and connect (i.e. data_base), [YOUR-USER-NAME] will be your MySQL log in name and [YOUR-PASSWORD-HERE] will be your MySQL password_
 * _5. Please make sure you have access to MySQL and MySQLWorkbench, download and open instance if have not already_
-* _6. Navigate to project file with `\$ cd Factory` if not currently in it.
+* _6. Navigate to project directory with `\$ cd PierresTreats` if not currently in it.
 * _7. In the command line, run the command `\$ dotnet tool install --global dotnet-ef --version 6.0.0` if have not added dotnet -ef globally yet._
 * _7. In the command line, run the command `\$ dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.0` to add Entity EFCore._
 * _8. In the command line, run the command `\$ dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore -v 6.0.0` to add Identity Entity EFCore._
